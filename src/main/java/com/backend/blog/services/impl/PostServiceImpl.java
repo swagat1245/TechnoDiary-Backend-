@@ -46,7 +46,6 @@ public class PostServiceImpl implements PostService {
 
         Category category = this.categoryRepo.findById(categoryId)
                 .orElseThrow(() -> new ResourceNotFoundException("Category", "category id ", categoryId));
-
         Post post = this.modelMapper.map(postDto, Post.class);
         post.setImageName("default.png");
         post.setAddedDate(new Date());

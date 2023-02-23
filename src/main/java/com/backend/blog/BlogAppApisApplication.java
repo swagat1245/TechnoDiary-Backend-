@@ -37,7 +37,7 @@ public class BlogAppApisApplication implements CommandLineRunner {
         System.out.println(this.passwordEncoder.encode("xyz"));
 
         try {
-
+            //todo
             Role role = new Role();
             role.setId(AppConstants.ADMIN_USER);
             role.setName("ROLE_ADMIN");
